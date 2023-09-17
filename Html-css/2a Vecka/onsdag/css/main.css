@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;1,8..144,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;1,8..144,100&display=swap");
+header {
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+
+#logo {
+    width: 100px;
+}
+
+.list {
+    display: inline-block;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+  }

@@ -1,0 +1,232 @@
+Beskrivning:
+    Jag har gjord så att man kan kopera varje svar i en html file för att sen kunna se resultatet i webbläsare.
+
+
+(1) Beskriv varför behöver man "attributes" in en html-kod.
+    Man använder attributes för att lägga till ytterligare information eller egenskaper till html-element.
+    till exempel i <img> ger man attribute src="" för att ge bildens plats och man kan till exempel 
+    ger man attributeet class="" för att sen ska kunna selekta en element i css och javascript
+
+(2) Ger ett exempel på en "Opening" och "Closing" element.
+    En oppning elemnt/tag kan vara <h1> och an closing elemnt/tag kan vara </h1>
+    
+(3) Skapa ett stycke med texten "Hello Word!" inuti.
+    <!DOCTYPE html>
+    <html lang="se">
+        <head>
+            <title>Fråga nummer 3</title>
+        </head>
+        <body>
+            <p>Hello Word!</p>
+        </body>
+    </html>
+
+    
+(4) Skriv html-koden som kan reproducera följande layout:
+    <!DOCTYPE html>
+    <html lang="se">
+        <head>
+            <title>Fråga nummer 4</title>
+        </head>
+        <body>
+            <hr>
+            <h1>Heading 1</h1>
+            <hr>
+            <p>This paragraph contians a bold/strong <strong>word</strong> and an italic <i>word</i></p>
+        </body>
+    </html>
+
+
+(5) Skriv en hyper textlänk som pekar på Google sökmotor: https://www.google.com/webhp
+    <!DOCTYPE html>
+    <html lang="se">
+        <head>
+            <title>Fråga nummer 5</title>
+        </head>
+        <body>
+            <a href="https://www.google.com/webhp">Go to google</a>
+        </body>
+    </html>
+
+
+(6) Skriv html-koden för en ordnad lista med 3 artiklar
+    <!DOCTYPE html>
+    <html lang="se">
+        <head>
+            <title>Fråga bummer 6</title>
+        </head>
+        <body>
+            <ol>
+                <li><article>Lorem ipsum dolor sit amet consectetur adipisicing elit.</article></li>
+                <li><article>Lorem ipsum dolor sit amet consectetur adipisicing elit.</article></li>
+                <li><article>Lorem ipsum dolor sit amet consectetur adipisicing elit.</article></li>
+            <ol>
+        </body>
+    </html>
+
+
+(7) När måste vi använda artikelelementet (article) istället för avsnittselementet (section).
+Förklara varför.
+    Section använder man för att struktuera och gruppera innehåll på ett hemsida och kan innehålla header, article och footer. 
+    Men article använder när innehållet kan stå för sig själv. som till exempel en nyhet article som kan innehålla rubrik och test.
+
+
+(8) Skriv html-koden för två kapslade/nested listor. Den första lis§§ta måste vara numererad
+och den andra onumererad.
+    <!DOCTYPE html>
+    <html lang="se">
+        <head>
+            <title>Fråga bummer 8</title>
+        </head>
+        <body>
+            <ol>
+                <li>Mat
+                    <ul>
+                        <li>Kötbullar</li>
+                        <li>Potatis</li>
+                    </ul>
+                </li>
+                <li>drika
+                    <ul>
+                        <li>Vaten</li>
+                        <li>Mjölk</li>
+                    </ul>
+                </li>
+            <ol>
+        </body>
+    </html>
+
+(9) Beskriv hur kan man validera en html-kod.
+    Man kan använda https://validator.w3.org/ hemsidan.  Man ladda up sit kod i (W3C) för at se om det är standard enligt (W3C).
+
+(10) Skriv en html-kod som ger följande resultat när den öppnas med en webbläsare. 
+Skickaknappen ska skicka all data till servern https://httpbin.org med rätt metod för detta formulär.
+    <!DOCTYPE html>
+    <html lang="se">
+        <head>
+            <title>Fråga bummer 10</title>
+        </head>
+        <body>
+            <!--jag använde method post för att den används när man vill skicka känsliga data(data syns inte i url:en) -->
+            <form action="https://httpbin.org/post" method="POST">
+                <fieldset>
+                    <legend>Student Info</legend>
+                    <fieldset>
+                        <legend>Personal Info</legend>
+                        <label for="fname">First Name:</label>
+                        <input type="text" id="fname" placeholder="First Name">
+                        <br><br>
+                        <label for="lname">Last Name:</label>
+                        <input type="text" id="lname" placeholder="Last Name">
+                        <br><br>
+                        <label for="passw">Password:</label>
+                        <input type="password" id="passw" placeholder="Password">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Photo</legend>
+                        <img src="img/spring-bird.jpg" alt="A spring bird" style="width: 250px;">
+                        <!--Försst hade jag taget <figurecaption> istället för taget <p> men när jag laddade up filen till w3c så fick jag error. 
+                        Erroret var att man kan inte ha taget <figurecaption som a child
+                        i taget <fieldset> så jag tog bort taget <figurecaption> och skriv <p> istället-->
+                        <p style="margin: 0%;">a spring bird</p>
+                    </fieldset>
+                    <input type="submit" value="submit">
+                </fieldset>
+            </form>
+        </body>
+    </html>
+
+(11) Skriv en html-kod som ger följande resultat när den öppnas med en webbläsare´
+    <!DOCTYPE html>
+    <html lang="se">
+    <head>
+        <title>Fråga bummer 11</title>
+    </head>
+    <body>
+        <table>
+        <caption>
+            September
+        </caption>
+        <thead>
+            <tr>
+            <th>&nbsp;</th>
+            <th>Måndag</th>
+            <th>Tisdag</th>
+            <th>Onsdag</th>
+            <th>Torsdag</th>
+            <th>Fredag</th>
+            <th>Lördag</th>
+            <th>Söndag</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <th>35</th>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            </tr>
+            <tr>
+            <th>36</th>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            </tr>
+            <tr>
+            <th>37</th>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            </tr>
+            <tr>
+            <th>38</th>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            </tr>
+            <tr>
+            <th>39</th>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>&nbsp;</td>
+            </tr>
+        </tbody>
+        </table>
+    </body>
+    </html>
+
+
+(12) Beskriv vad ett versionshanteringssystem gör. Ge två exempel på sådana tillämpningar.
+    Versionshanteringssystem används för att spåra och hantera ändring kod och filer i ett projekt:
+    Det gör möjligt att utvecklare kan samarbeta och hämta tillbaka tidigare version om det behövs.
+    två exempel är: git och github
+
+
+(13) Vad betyder det att begå/commit filer med ett versionskontrollsystem?
+    Det betyder att man sparar ändringar som gör i ett projekt och att man kommenterar vad har man ändrat.
+
+(14) Vad är syftet med att "pull" och "push" a "repository" med Git?
+    Syftet med push är att man skickar den lokala ändringar till repository som är
+    i molnet(github) och innan man gör det man registrerar ändingen genom commit.
+
+    Syftet med pull är att hämta ändringar som kanske de andra utvecklare har gjord i repository eller man kan hämta en he projekt.

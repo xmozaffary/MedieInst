@@ -1,0 +1,269 @@
+Exercices
+
+Git and github
+
+1. How do you set your Git username and email for all your local repositories?
+
+   git config –-global user.name "your name"
+   Git config –global user.email "your email"
+
+2. How do you initialize a git repo inside a local map in your computer?
+   git init .
+   git init -b main
+   (-b main betyder att init i main branchen)
+   (punten betyer att i detta man som befinner sig)
+
+3. In Visual Studio Code (VSC) what mean U, M and A on the right side of each files?
+   U= unmerged
+   m= modifiend
+   A= added
+
+4. What are you doing when you make a commit?
+   man ska kommentera och sen man pusha ändringen till github
+   detta gör man genom att skriva kommandot git commit -m "meddelande"
+   efter att man gjord commit alla filer som var på stage kan trakas av version system kontroll git.
+
+5. Explain what you need to do to push local files to a GitHub repo.
+   man ska adda filer.
+
+6. Explain why sometimes one need to create new branches in Git.
+   om man har en ny idea så kan man skappa en ny branch och jobba i den branchen obroende till den main branch och sen om idean var bra kan mergea till main branch.
+
+7. How to check the state of a repo?
+   man kan checka med att skriva git status
+
+8. How do you check the version of your git application?
+   kommandot git -version
+
+For more exercices:
+
+https://www.w3schools.com/git/git_exercises.asp?remote=github
+
+HTML
+
+1.  What is the first declaration in an HTML5 document?
+    man ska deklarera typen genom att skriva <!DOCTYPE html>
+
+2.  Give the main structure of an HTML document.
+    <!DOCTYPE html>
+    <html>
+    <head>
+
+            </head>
+
+            <body>
+
+            </body>
+        </html>
+
+        <!DOCTYPE html>
+
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+
+</body>
+</html>
+
+3.  Why do we need meta data in head element?
+    vi behöver meta för vissa de viktigaste information som till eexempel title, hcarekter set och såna saker.
+    meta står för metadata som innehåller extra information som inte syns i hemsida
+
+4.  What is an attribute?
+    attribute är extra information för en element.
+
+5.  Which attribute you used to specify the default language and in which element it should be?
+    attribute to specify thee default language is lang="en" and it shuld be in <html lang="en"> element
+
+6.  What is the difference between head and header elements?
+    
+7.  What represents W3C?
+    worl wide consortium
+
+8.  What is a validator? Give the url of w3c official validator.
+    www.validator.w3.org
+    jämföra detta code som man laddar up med det standard som är difinde av w3c
+
+9.  What is main objective of HTML code?
+    html focuserar på struktur och inte på stylen.
+
+10. How to write a main- and sub-rubric in a webpage?
+    a rubrik skriver man en gång i header ov hemsida
+    <h1>intoduktion</h1>
+    subrubric är tex <h2>text </h2>
+11. How to add an hyperlink to medieinstitutet site?
+    jag studerar på <a href="www.medieinstitutet.se/"> medie instituteet </a> in stockholm
+
+12. Create a simple menu with links to each rubric of a webpage.
+    <nav>
+        <a href="#intro">introduction</a>
+        <br>
+        <a href="#chap">chapter one</a>
+     <nav>
+
+     <h1 id="intro">introduction</h1>   
+     <h1 id="chap1">chapter one</h1>
+
+13. How to define the character set to be UTF-8?
+    <meta charset="UTF-()">
+
+14. How to insert a paragraph?
+    <p>this is a paragraph of text</p>
+15. Does all element in HTML5 have an end tag?
+    nej inte alla. visa tagar behövs inte stäng tag.
+
+
+16. Give an two examples of HTML5 elements that do not have an end tag.
+    <meta>
+    <link>
+
+17. Create an ordered list with 3 items.
+    <ol>
+        <li>items</li>
+        <li>items</li>
+        <li>items</li>
+    </ol>
+
+18. Create an unordered list with 3 items.
+    <ul>
+        <li>items</li>
+        <li>items</li>
+        <li>items</li>
+    </ul>
+19. Create a definition list with 2 items.
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language.</dd>
+
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets is used for styling.</dd>
+
+    </dl>
+
+20. Create a download link to a local file.
+    <a href="url" doenload > en image </a>
+
+21. What means semantic?
+    Det betyder meaning, och är element och taggar som ger meningsfull struktur och betydelse till innehålleetpå hemsidan.
+
+22. What is the difference between the elements article and section?
+
+23. What are entities? give 2 examples.
+    a eentities börjass alltid med & charecter och slutas med : 
+    &lt:
+    &gt:
+24. How to set bold and italic text?
+    <b> bold text </b>
+    <strong> strong </strong>
+    <i> italic text </i>
+25. What is the point to have a title element inside the head element?
+    man beskriver hemsidan kort
+    element <title> visas bara på tab av webbläsaren när man går med musen på taben.
+26. How to insert a comment in HTML?
+    <!--komment -->
+27. What is purpose of the main element?
+    det markerar början och slutet av hemsidan  och det ska bara vara en main i hella hemsidan.
+28. Add 10 empty lines in HTML doc.
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <!------------------------------->
+    vad är ett block elemnt? vad är det som gör ett block element ett block elements?
+        att ett block elemnt är ett block-element betyder att att elementet beter sig som ett block. 
+        det tar upp den plats som är kvar på raden som den placerades på.
+        till exemple om man skriver ett <p> tag som är ett block element den nästa element kommer hämna under <p> taget, 
+        eftersom <p> tag är ett block element och tar hela raden.
+
+    Vad är nästling?
+        Att nästla element betyder att vi placerar de inuti varandra.
+        ett exemple:
+            <div>
+                <span> Hej, denna text är placerad inuti en span, som i sin tur ligger inuti en div</span>
+            </div>
+            I detta example är div förälder/parents till span taget och span taget är barnet/child till div-en
+            
+            vi amvänder nästling för att få en tydligare stuktur på informaion som skall synas. men även för att hjälpa till med css och js i viss mån.
+    
+    tagen <img/>
+        Attributet src som står för source används för att visa var bilden finns någonstans.
+        
+    
+    <!-------------html5 tabller och listor------------->
+    Tabller:
+        för att skappa tabller använder vi <table> tag.
+        varje tabll bör ha ett huvud(rubrik)
+            en rubrik görs i <thead>
+            varje rad i en tabell görs med <tr>
+            en klumn i en tabell görs med <th>
+            en klumn i innehållet görs med <td> en i varje klumn. <td> = table data
+            
+        varje tabll bör ha ett innehåll
+        varje tablle kan ha ett tabblfot
+    
+    Listor:
+        en list är inte a tabll.
+        listor tagar: 
+            <ul> = är en oordnad lista
+            <ol> = är en ordnad lista
+        <li> ska vara inuti en <ul> eller <ol>.
+
+
+    Css:
+        css förkortning för Cascading StyleSheet
+        css används för att  ge våra html-element form och färg
+        
+        Selektorer:
+            En selektor är ett sätt för css att hitta de element som ska påverkas.
+            tre vanliga selektorer:
+                1- id = ska vara unik
+                    sättet att selekta ett elemnet med id 
+                    id: #idOfElemnet 
+                2- class = behöver inte vara unik. man ange class till flera element och då alla de elementer får samma värde.
+                    sättet att selekta ett elemnet med class
+                    class: .classOfElement
+                3- tagname = det bättre man tar id eller class för att det kan finnas flera element av samma element och då får alla
+                    elemnet samma värde.
+
+            De tre selektorer har olika vikt.
+                id kommer alltid först. id kommer att skriva över class och tagname om vi har selektorer som gör olka saker.
+            
+            exemple på selektor som har classen product-container
+                .product-container {
+                    background-color: red;
+                }
+            Nästling i Css:
+                man kan nästla selektorer i css.
+                
+                olika sätt att nästla selektorer
+                    1- .container p betyder att hitta classen container och sen hitta  alla p taggar och styla alla p som finns inuti classen conainer.
+
+                    2- .container > .heading betyder hitta classen container och hitta alla class heading som är barn/child till classen container och 
+                        styla de.
+            Rgler:
+                En regel är en rad i css som gör ett elemnet påverkas av css och en selektor kan innehålla flera regel.
+                exemple på regler som har två st regler
+                .container {
+                    background-color: red; 
+                    border: 1px solid green;
+                }
+                
+                de vanliga regler i css:
+                    . margin: 5px 5px 5px 5px;       lägger till en marginal utanför eamen på 5px åt alla håll.
+                    . padding: 5px 5px 5px 5px;      lägger till utrymme innanför ramen och innehållet på 5px åt alla håll.
+                    . border-radius: 15px;           gör rundade hörn på en ram med 15px
+                    . height 100px;
+                    . width: 100px;
