@@ -1,0 +1,23 @@
+@import "color";
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ body{
+    color: $myBlue;
+    @include center;
+}
+
+
+@mixin hide ($hide:true){
+    @if $hide{
+        margin-left: -10000px;
+    }
+}
+
+h1 {
+    @include hide(true);
+}
