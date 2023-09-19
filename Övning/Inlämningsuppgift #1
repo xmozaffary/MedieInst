@@ -4,6 +4,7 @@ Beskrivning:
 
 (1) Beskriv varför behöver man "attributes" in en html-kod.
     Man använder attributes för att lägga till ytterligare information eller egenskaper till html-element.
+    (Extra information i en element)
     till exempel i <img> ger man attribute src="" för att ge bildens plats och man kan till exempel 
     ger man attributeet class="" för att sen ska kunna selekta en element i css och javascript
 
@@ -124,7 +125,7 @@ Skickaknappen ska skicka all data till servern https://httpbin.org med rätt met
                     </fieldset>
                     <fieldset>
                         <legend>Photo</legend>
-                        <img src="img/spring-bird.jpg" alt="A spring bird" style="width: 250px;">
+                        <img src="img/spring-bird.jpg" alt="A spring bird" width="250px">
                         <!--Försst hade jag taget <figurecaption> istället för taget <p> men när jag laddade up filen till w3c så fick jag error. 
                         Erroret var att man kan inte ha taget <figurecaption som a child
                         i taget <fieldset> så jag tog bort taget <figurecaption> och skriv <p> istället-->

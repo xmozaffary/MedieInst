@@ -1,0 +1,37 @@
+/* SASS */
+/* Variable*/
+
+$text-color: blue;
+$size: 2rem;
+$primary-color: green;
+$secondary-color: lightblue; 
+
+$font-size : (
+    "big" :6rem,
+    "medium" : 3rem,
+    "small" : 1rem
+
+);
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@function weight($size){
+    @return map-get($font-size, $size)
+}
+
+.main {
+    color: $text-color;
+    font-size: weight(medium);
+    #{&}-section{
+        p:hover{
+            color: red;
+            @include center; 
+        }
+    }
+}
+
+
