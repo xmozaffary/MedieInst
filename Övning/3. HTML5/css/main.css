@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+}
+
+section {
+    width: 600px;
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+}

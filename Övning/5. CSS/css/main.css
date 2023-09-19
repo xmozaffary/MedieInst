@@ -1,0 +1,46 @@
+p {
+    background-color: red;
+}
+
+.container {
+    background-color: green;
+}
+
+#main {
+    background-color: blue;
+}
+
+div {
+    height: 30px;
+    width: 40px;
+
+    border: 1px solid grey;
+    border-radius: 20px;
+}
+
+footer {
+    border: 1px solid blue;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent {
+    width: 200px;
+    height: 300px;
+    background-color: blue;
+    position: relative;
+}
+
+.child {
+    background-color: blueviolet;
+    width: 100px;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    display: inline;
+}

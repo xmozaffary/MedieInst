@@ -1,0 +1,37 @@
+div {
+    display: inline;
+}
+
+button {
+    display: block;
+}
+article {
+    display: none;
+}
+.parent {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    position: relative;
+    left: 300px;
+    top: 50px;
+}
+
+.child {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid green;
+    position: absolute;
+    top: 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border: 1px solid blue;
+    height: 75px;
+    width: 100%;
+}

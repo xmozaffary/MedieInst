@@ -284,4 +284,9 @@ https://www.briankoponen.com/forza-horizon-5-logitech-g29-g920-settings/
         Man ska också berätta för användaren vilka information som behövs och det kan man göra med hjälp av <label> taget som är plachoder/attribut i <input>.
         Man ska kunna skicka iväg formulären genom att skappa en knapp(submit på engeliska)
             <button type="submit">skicka</button>
-        
+    <!--------------------------Olika position--------------------->'
+    position: static; det är standard position det beyder att de beter sig som de ska/ eller som html elemnt gör.
+    position: relative; 
+    positoon: absolute; det betyder att vi kan berätta hur en element beter sig i förhållande till sin parents. elemnet flyttar sig upp i vänstra hörent.
+    position: fixed; används för att en element ska vara fixed.
+    position: sticky; 
