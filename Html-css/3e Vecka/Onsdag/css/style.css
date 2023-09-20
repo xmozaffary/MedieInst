@@ -1,0 +1,22 @@
+body {
+  background-color: rgb(212, 228, 233);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size: 40px;
+  width: 600px;
+}
+
+@media (max-width: 450px) {
+  g body {
+    background-color: yellowgreen;
+  }
+  p {
+    width: 200px;
+    font-size: 20px;
+    font-size: 32px;
+  }
+}/*# sourceMappingURL=style.css.map */
