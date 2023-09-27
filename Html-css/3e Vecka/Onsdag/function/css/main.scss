@@ -1,0 +1,24 @@
+@use 'sass:math';
+
+$co: black;
+ 
+body {
+    background-color: $co;
+    font-weight: 700-200;
+    width: math.div(85.2, 12);
+} 
+
+@function convert ($rem){
+    @return math.div($rem, 16)
+
+}
+
+
+
+p{
+    font-size: convert(40rem);
+    @if ($co == #fff) {
+        color: black;
+    }
+}
+

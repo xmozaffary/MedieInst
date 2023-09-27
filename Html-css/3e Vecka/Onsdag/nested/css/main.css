@@ -1,0 +1,12 @@
+.body .header1 {
+  color: blue;
+}
+
+.p2 ~ .p1 {
+  color: red;
+}
+
+#BigL::first-letter {
+  font-size: 30rem;
+  color: red;
+}/*# sourceMappingURL=main.css.map */

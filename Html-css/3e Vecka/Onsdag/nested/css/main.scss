@@ -1,0 +1,16 @@
+$colorOfFont: blue;
+
+.body {
+    .header1{
+        color: $colorOfFont;
+    }
+}
+
+.p2 ~ .p1 {
+    color: red;
+}
+
+#BigL::first-letter{
+    font-size: 30rem;
+    color: red;
+}

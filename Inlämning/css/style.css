@@ -1,0 +1,208 @@
+/* 
+Jag har skrivit CSS-koden så att den fungerar på en skärm som är bredare än 1400 px. Om skärmbredden inte exakt matchar bilden i upp2.png, kan den vara mindre än 1400 px. Jag har också försökt använda media queries för att anpassa stilar för olika skärmstorlekar.
+*/
+
+
+/* för att importera font från google font */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Roboto+Serif:ital,opsz,wght@0,8..144,100;1,8..144,100&display=swap');
+
+*{
+    /* reset */
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* Jag har gett hemsidan en margin-left för att skapa lite mellanrum i förhållande till bilden upp2.png */
+    margin-left: 1em;
+    font-family: 'Roboto Serif', serif;
+}
+
+.header{
+    background-color: #663399;
+    width: 100%;
+}
+.header nav ul{
+    /* använde felx-box för att centerera menu*/
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-evenly;
+    font-size: 3em;
+    padding: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+
+}
+
+a:hover{
+    /* för att när man går med musen på menu texten ska bli gul */
+    color: yellow;
+}
+
+.container {
+    /* använde grid för att kunna plasera de olika elemneter
+    jag bestämde 12 columner för att kunna plasera elemneter så nära bilden som möjligt. Man är mer frihet att ma mer columner än att ha mindre.  */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr) ;
+    grid-template-rows: auto auto auto;
+    gap: 1em;
+}
+
+.container .box:nth-child(2) {
+    /* grid-column: 1/-1; betyder att från första column till den sista column. när man skriver -1 då slipper man räkna hur måmga columner man har den går till den sista columnen */
+    grid-column: 1/-1;
+    grid-row: 1;
+    max-width: 100vw;
+    margin: 1em;
+    padding: 0;
+}
+
+.container .box:nth-child(3){
+    background-color: #ADD8E6;
+    grid-column: 9/-1;
+    grid-row: 2/-1;
+    font-size: 1.9em;
+    padding: 1em;
+    color: white;
+}
+
+
+/* för att den första bokstaven i texten blir störe och ändra färgen. */
+.container .box:nth-child(3)::first-letter{
+    font-size: 4rem;
+    color:yellow;
+}
+
+.container .box:nth-child(1){
+    background-color: blue;
+    grid-column: 1/9;
+    grid-row: 2/3 ;
+    padding: 1em;
+    font-size: 1.5em;
+}
+
+.container section figure figcaption{
+    color: white;
+}
+
+.container .box:nth-child(4){
+    background-color: #ADD8E6;
+    grid-column: 1/3;
+    grid-row: 3/-1;
+    writing-mode: vertical-lr;
+    padding-top: 1em;
+    padding-left: .5em;
+    font-size: 3em;
+    color: white;
+}
+
+.container .box:nth-child(5){
+    background-color: #800080;
+    grid-column: 3/9;
+    grid-row: 3/-1;
+    padding: 1em;
+    font-size: 1.5em;
+}
+
+.footer {
+    background-color: #663399;
+    width: 100%;
+    height: 3em;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 2em;
+    font-size: 2em;
+}
+
+
+/* Media query för skärmer mindre än 1400 px 
+den behåller layoutet bara font-size blir mindre och margin och padding*/
+@media screen and (max-width: 1400px) {
+    body{
+        margin-left: .5em;
+    }
+
+    .header nav ul{
+        font-size: 1.5em;
+
+    }
+
+    .container .box:nth-child(3) {
+        font-size: 1.5em;
+    }
+
+    .container .box:nth-child(3)::first-letter{
+        font-size: 4.5rem;
+    }
+
+    .container .box:nth-child(5){
+        padding: .5em;
+        font-size: 1em;
+    }
+    .container .box:nth-child(1){
+        padding: .5em;
+        font-size: 1em;
+    }
+
+    .container .box:nth-child(4){
+        font-size: 2em;
+    }
+
+    .container .box:nth-child(2){
+        margin: .5em;
+    }
+
+    .footer {
+        font-size: 1.5em;
+    }
+
+
+}
+
+
+@media screen and (max-width: 760px) {
+
+    .header nav ul{
+        font-size: 1em;
+    }
+    .container .box:nth-child(3) {
+        font-size: .7em;
+    }
+
+    .container .box:nth-child(3)::first-letter{
+        font-size: 1rem;
+    }
+
+    .container .box:nth-child(5){
+        padding: .5em;
+        font-size: 1em;
+    }
+    .container .box:nth-child(1){
+        padding: .5em;
+        font-size: 1em;
+    }
+
+    .container .box:nth-child(4){
+        font-size: 1em;
+    }
+
+    .container .box:nth-child(2){
+        margin: 1em;
+    }
+
+    .footer {
+        font-size: 1em;
+    }
+}
+
