@@ -1,0 +1,3 @@
+@function multi ($row, $col){
+    @return $row * $col
+}
