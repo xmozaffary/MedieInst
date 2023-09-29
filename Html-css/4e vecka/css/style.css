@@ -1,21 +1,79 @@
+@charset "UTF-8";
 body {
+  margin: 5%;
+}
+
+.header {
+  border: 5px solid gray;
+  border-radius: 5px;
+  background-color: red;
+}
+
+.header nav {
+  background-color: lightseagreen;
+}
+
+.content {
+  background-color: lightgreen;
+  border: 1px black dotted;
+  padding: 20px;
+  margin: 10px;
+}
+
+#main-contain {
+  background-color: rgb(29, 222, 164);
+}
+
+.mydiv {
+  border: black solid 5px;
+  width: 600px;
+  height: 250px;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(29deg);
+  transition: width 3s;
 }
 
-.center {
-  width: 300px;
-  height: 300px;
-  background-color: purple;
+.mydiv:hover {
+  width: 400px;
+}
+
+.circle {
+  border: solid 5px red;
   border-radius: 50%;
-  filter: blur(90px);
-  position: absolute;
+  width: 50px;
+  height: 50px;
 }
 
-.back {
-  width: 150px;
-  height: 150px;
-  filter: none;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.content p:first-child {
+  background-color: red;
+}
+
+img {
+  width: 600px;
+}
+
+a {
+  display: block;
+}
+
+/* Definiera en ny @keyframes-regel som heter "loop" */
+@keyframes loop {
+  0% {
+    width: 50px; /* Startpunkt för övergången (0% bredd) */
+  }
+  50% {
+    width: 100px; /* Halvvägs genom övergången (50% bredd) */
+  }
+  100% {
+    width: 0; /* Slutpunkt för övergången (0% bredd) */
+  }
+}
+/* Tillämpa loppeffekten på ett element med klassen "animated" */
+.animated {
+  width: 10px;
+  height: 10px; /* Börja med 0 bredd */
+  animation: loop 2s linear infinite; /* Använd "loop"-nyckelramen, varar 2 sekunder, linjär timing, och loopa oändligt */
 }/*# sourceMappingURL=style.css.map */

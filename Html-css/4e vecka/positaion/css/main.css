@@ -1,0 +1,76 @@
+.main {
+  background-color: blue;
+  width: 90px;
+  height: 90px;
+  border: solid 1px red;
+  transition: background-color 1s linear;
+}
+
+.main:hover {
+  background-color: red;
+}
+
+.font {
+  font-size: 1rem;
+  transition: font-size 2s linear;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.font:active {
+  font-size: 2rem;
+  font-family: "Times New Roman", Times, serif;
+  color: green;
+  opacity: 10%;
+}
+
+.anime {
+  border: solid 2px red;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  animation: myanime 0.75s infinite;
+  border-radius: 50%;
+}
+
+@keyframes myanime {
+  0% {
+    width: 150px;
+    height: 150px;
+  }
+  25% {
+    width: 170px;
+    height: 150px;
+  }
+  50% {
+    width: 200px;
+    height: 200px;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+  }
+}
+.halv1 {
+  background-color: red;
+  position: absolute;
+  top: 200px;
+  left: 50px;
+  width: 200px;
+  height: 200px;
+  animation: mya 1s infinite;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.halv2 {
+  position: absolute;
+  top: 200px;
+  left: 50px;
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  animation: mya 1s infinite;
+}
+
+@keyframes mya {}/*# sourceMappingURL=main.css.map */
