@@ -290,3 +290,27 @@ https://www.briankoponen.com/forza-horizon-5-logitech-g29-g920-settings/
     positoon: absolute; det betyder att vi kan berätta hur en element beter sig i förhållande till sin parents. elemnet flyttar sig upp i vänstra hörent.
     position: fixed; används för att en element ska vara fixed.
     position: sticky; 
+
+
+
+
+
+    <!----------------------VIMEO----------------------->
+    SEMANTK
+    Semantik är beskrivande taggar som tex istället att skriva: 
+        <div>
+            <a href="">
+            <a href="">
+            <a href="">
+        </div>
+        så kan man skriva:
+        <nav>
+            <a href="">
+            <a href="">
+            <a href="">
+        </nav>
+        nav är beskrivande man kan se nästan läsa i taggen att det är en navigation. nav står för navigation.
+            MEN VARFÖR?
+                för att den är tillgängligt; enklare att läsa och sökmotoroptimering
+
+    

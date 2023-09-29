@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Lora&family=Signika+Negative:wght@300&display=swap');
+
+.ffont {
+    font-family: 'Lora', serif;
+}
+
+.afont {
+    font-family: 'Fuggles', cursive;
+    font-size: 2rem;
+}
+.tfont {
+    font-family: 'Signika Negative', sans-serif;
+}
