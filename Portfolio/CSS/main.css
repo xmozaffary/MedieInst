@@ -1,0 +1,30 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body::before {
+  background-image: url("media/pack.jpg"); /* Ange sökvägen till din bild */
+  background-size: cover; /* Täck hela sidan */
+  background-repeat: no-repeat; /* Förhindra upprepning av bakgrundsbilden */
+  font-family: Arial, sans-serif;
+  background-size: 100% 100%;
+  background-position: center center; /* Ange en typsnitt om så önskas */
+  color: white;
+}
+
+.background-img {
+  width: 100vw;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}/*# sourceMappingURL=main.css.map */
