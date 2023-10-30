@@ -58,3 +58,41 @@ Operationer:
         modulus
             age % 2;
     man kan plusa string
+
+    hur ska man ändra string till int
+    let age = "44";
+    let myAge = parseInt(age); --> detta ger talet 44
+        man kan också skriva number(age);
+        =+ age blir = 0+44. eftersom först värdet är int så kommer age också bli int
+
+
+    logik if/else
+        sytax: 
+        if ( ? något är sant: boolean){
+            let age = 44;
+
+        }
+        else {
+
+        }
+
+        allt mellan muvinger är i en och samma codblck.
+        blockscopade variabler.
+    
+    jämförelse
+        age > 40 störa än
+        age < 40 mindra än
+        age == 40 lika med
+        age === 40 lika. den jämför båda värde och datatyp. mycket säkarare
+        -man kan kombinera de
+            age <= 40
+            age <= 40
+            age !== 40
+    Logiska operatorer
+    || = eller
+    && = och
+
+
+    Färger:
+        blå är alltid js ord som är upptagen
+        assigment beyder tilldelning. reserverat
