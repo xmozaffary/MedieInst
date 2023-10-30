@@ -1,0 +1,60 @@
+30 oktober:
+
+varför JS?
+    Funktionalitet
+    Databas men det ska vi inte göra i detta kurs
+    Dynamik
+    Cool grejer
+MAn skriva allting i engliska.
+man ska en Projekt mapp sen en index.html file.
+man ska en mapp som heter src. src mapp är jätte viktig.
+    i src mapp ska man ha ytreligare mappar som hetetr: js mapp och scss mapp
+    så här ska strukuren ska ser ut.
+        projekt mapp
+            index.html file
+            src mapp
+            js mapp --> main.js
+            scss mapp
+Olika typer att linka filer: 
+
+    <script  src=" relavativa sökvägen tiol js filen. detta ska liggga i html filen example: src/js/main.js"> /* 
+    plasering av script av taget: ligga js file var som helst och prova vad som händer. i börja spelar det inget roll var den ligger.*/ </script>
+
+Variable:
+    -namn
+        -En
+        -Litet bokstav
+        -Beskrivande
+        -Unik
+            example:
+                age
+                numberOfChildren <-- lower caml casing
+    -värde
+        -"Hej" String har alltid sitadtecken
+        -44
+        -true = 1
+    värdet tilldelas till varibale namnet
+        age = 44;
+        2 sätt att skapa variable
+        cont
+        let
+        console.log() printar i webbläsarens console.
+            -console.log(age är en variable namn);
+            -console.log("age" är en text);
+
+Datatyper:
+    String = text
+    number = alla tal
+    boolean = 1/0
+
+Operationer:
+    let age = 44;
+    age = 45/2; nu har jag ändrat värdet, det kunde jag för att jag använde let variablen.
+    man skapar en variable bara en gång.
+    syntax betyder skrivsätt.
+    age = age +1;
+    age += 1;
+    age++;
+        modulus
+            age % 2;
+    man kan plusa string
