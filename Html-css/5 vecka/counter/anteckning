@@ -1,0 +1,5 @@
+1. counter-reset: mycounter 1:
+2. counter-increment: my counter -2; deremrnt
+3. content: counter(mycounter)
+
+    övning: skriva a counter och använda det med en warning. @warn
