@@ -34,6 +34,6 @@ function myfirstjavascript(){
     
         let k = (10 - (sum % 10)) % 10
         console.log(k);
-        document.getElementById("demo").innerHTML = "dit kontrolsiffran är: " + k;
+        document.getElementById("demo").innerHTML = "=>: " + k;
     }
 }
