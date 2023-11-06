@@ -7,7 +7,6 @@ window.onload = function(){
   app.appendChild(p);
   
   for (let i = 0; i < len; i++) {
-    console.log(myName[i]);
     const lastIndex = myName[myName.length -1]
     if(myName[i] == lastIndex){
       p.innerText += myName[i];
