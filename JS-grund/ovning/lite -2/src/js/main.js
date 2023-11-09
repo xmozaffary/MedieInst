@@ -39,10 +39,18 @@ theInput.addEventListener("keyup", (e) => {
   }
 }) */
 
-let number1 = 0;
-let number2 = 1;
-let sum = 0;
-for (let i = 0; i < 100; i++) {
-  sum = number1 + number2;
-  console.log(sum);
+
+let b;
+
+function f(a){
+  if(a == 1){
+    b = a - 1;
+  }else{
+    a + 1;
+  }
+  return b;
 }
+
+const d = f(1);
+
+console.log(d);
