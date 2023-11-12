@@ -1,8 +1,10 @@
 import "./../css/style.css";
+//import "./../media/save.svg";
 // create heaher
 const headerContainer = document.getElementById("headerContainer");
 headerContainer.className = "headerContainer";
 const app = document.getElementById("app");
+app.className = "app";
 
 const headerContent = document.createElement("div");
 headerContainer.appendChild(headerContent);
@@ -90,3 +92,54 @@ headerContent.appendChild(search);
 search.setAttribute("class", "search");
 search.setAttribute("placeholder", "search");
 search.setAttribute("type", "text");
+search.addEventListener("click", () => {
+  search.classList.add("getNewStyle");
+  //do nothing yet
+});
+
+const watchList = document.createElement("div");
+headerContent.appendChild(watchList);
+watchList.className = "watchList";
+
+const watchListContent = [0, "Watchlist"];
+
+for (let i = 0; i < watchListContent.length; i++) {
+  const watchBtn = document.createElement("div");
+  watchBtn.innerText = watchListContent[i];
+  watchList.appendChild(watchBtn);
+}
+
+const movieContainer = document.createElement("div");
+app.appendChild(movieContainer);
+movieContainer.className = "movieContainer";
+
+const movies = ["alian", "alian1", "alian2", "alian3"];
+
+const myFavorite = [];
+movies.forEach((e) => {
+  const movielist = document.createElement("div");
+  movieContainer.appendChild(movielist);
+  movielist.className = "movielist";
+  movielist.innerHTML = e;
+  movielist.addEventListener("click", () => {
+    myFavorite.push(e);
+    f();
+  });
+});
+
+const c = document.createElement("div");
+app.appendChild(c);
+
+const f = () => {
+  c.innerHTML = "";
+  myFavorite.forEach((e) => {
+    const productContainer = document.createElement("div");
+    productContainer.innerHTML = e;
+    c.appendChild(productContainer);
+    productContainer.className = "movielist";
+  });
+  console.log(watchListContent[0]++);
+  watchBtn.innerText = watchListContent[0]++;
+};
+
+// add to watch list
