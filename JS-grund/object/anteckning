@@ -4,7 +4,7 @@ Hur beskrivs en produkt?
     -Storlek => sting eller number, det beror på vad det är.
     -Bild => string (url)
     -Katagori => string
-    -Id man ska kunna idintifera en objekt som kan vara en rubrik eller en number.
+    -Id man ska kunna idintifera en objekt som kan vara en rubrik eller ett number.
     allt som vi skriv innan kallas för proportis, på sv = egenskaper
     de ska vara inne i kodblock
     egenskaper fungerar som variable
@@ -105,3 +105,103 @@ lite överkurs
     zip;
     city;
     }
+
+
+    Objekt 
+Hur beskrivs en produkt? 
+
+Pris (number) 
+Färg (string) 
+Storlek (string/number) 
+Bild (string med länk till bilden) 
+Kategori (string) 
+Id (string/number) 
+
+Alla dessa kallas properties/egenskaper och dessa använder vi för ett skapa ett objekt i javascript 
+Vi skapar ett objekt enligt exemplet nedan: 
+
+const product = {
+    price: 10, 
+    color: “red”, 
+    size:100, 
+    id: “abc123” 
+}; 
+
+Ifall vi vill ta reda på ett specifikt värde i vår variabel product så kan vi skriva tex product.color; och då får vi värdet “red” 
+const animal = { 
+    name: “Majsan”, 
+    type: “Katt”, 
+    color: “Vit”, 
+    birthday: “2010-07-30" 
+    IsVaccinated: true 
+} 
+
+Det går inte att skriva tex age: 10 ifall vi vill lagra en ålder, då denna siffra kommer vara konstant hela tiden, så därför måste vi skriva birthday och spara födelsedagen istället för då kan datorn räkna på det.
+Ifall vi vill visa vårat objekt i domen så måste vi skapa en tag för varje enskild egenskap så tex: 
+
+Const d = document.createElement(“div”); 
+    d.innerHTML = animal.name; 
+Vi behöver en mall för att skapa objekt som ser likadana ut så att vi sedan bara kan ändra värdena för våra egenskaper, denna mallen kallas class 
+Vi skapar en mall genom att skriva tex:  
+
+class Animal { 
+    name; 
+    type; 
+} 
+
+Viktigt att det är stor bokstav, för då vet vi att det är just en mall och inte en variabel eller liknande 
+
+Ifall vi vill använda vår mall så kan vi skriva: 
+const animal = new Animal (); 
+ordet new signalerar att det är ett nytt objekt som ska skapas och () anropar en funktion som finns när vi skapar vår Class/mall 
+
+Den funktionen i Class kallas constructor och är den som gör de möjligt för ett nytt objekt att skapas utifrån vår mall 
+Ifall vi vill använda vår mall för att skapa ett nytt objekt och sen ändra värdet på egenskaperna i objeketet så skriver vi tex: 
+
+class Animal { 
+    name; 
+    type; 
+constructor (name, type){ 
+    this.name = name; 
+    This.type = type; 
+    } 
+} 
+
+const a = new Animal(“Majsan”,”Katt”); 
+const b = new Animal(“Rosa”,”Ko”); 
+
+Dessa två nya objekt a och b vi skapat utifrån vår mall Class har nu samma datatyp (Animal), så nu kan vi använda dessa för att skapa en lista [a,b] 
+Det går att nästla objekt alltså: 
+
+const person { 
+    name:”Sebastian”, 
+    age: 44, 
+    isMarried: true, 
+    adress: { 
+        street: “Agatuv. 18”, 
+        zip: “168 60”, 
+        City:”Bromma” 
+    } 
+} 
+
+Ifall vi vill skapa en mall utifrån det så kan vi skriva: 
+class Person { 
+    name; 
+    age; 
+    asMarried; 
+    adress; 
+constructor(name, age, isMarried,adress) { 
+    This.name = name; 
+    This.age = age; 
+    This.isMarried = isMarried; 
+    This.adress = adress; 
+    } 
+} 
+
+Class Adress { 
+    street; 
+    zip; 
+    city; 
+} 
+
+ 
