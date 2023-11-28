@@ -1,0 +1,14 @@
+SCSS
+    -check lista
+        1.skapa projekt -> npm create vite
+        2.Rennsa och strukturera projekt -> csss -> scss
+        3.uppdatera sökvägrna till våra nya filer
+        4.installera sass -> npm i sass -D
+        5.kör projektet -> npm run dev
+
+        BEM - Block Element Modeify
+
+        -varför mixins = function i javascript
+        
+
+
