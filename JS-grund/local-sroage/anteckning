@@ -55,5 +55,9 @@ för att börja med projectet
         -git merge <source>
         -git push
 
+<<<<<<< HEAD
 
     repitation localStorage
+=======
+    bem, variabler 
+>>>>>>> 2555525e6e0c91299a72f2c89520435ba8808db1
