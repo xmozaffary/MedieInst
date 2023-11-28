@@ -1,0 +1,14 @@
+bootstrap
+    -vad 
+        *grafiska ramverk
+        *cc/js
+    var?
+        *getbootstrap.com
+
+    -compnents
+        *carcuel
+        *modal
+        *spinners
+        *button
+
+        om man vill trycka enter och form ska submitas så ska man ha en from tag
