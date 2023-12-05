@@ -61,7 +61,7 @@ typeScript
         genom att skriva function():datatype
 
         för att anropa funktionen
-        const s = sum(10 ; 20)
+        const s = sum(10 , 20)
 
 
     DOM   
