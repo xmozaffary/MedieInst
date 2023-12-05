@@ -1,0 +1,12 @@
+Repetition
+    async och await är för att hantera löfte
+    -Det är mer lättläsligt
+    om man tycker om funktioner så kan man använda .then istället för att hantera löfte
+    Det enda fetch gör att ger oss een löfte
+
+BOM
+    Browser object model
+    -funktionalet i webläsaren
+    window är en objekt
+
+    window.location.href => vilka url är jag just nu
