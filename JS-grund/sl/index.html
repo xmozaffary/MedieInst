@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>interface</title>
+  </head>
+  <body>
+    <div id="app">
+      <form id="form" class="from">
+        <fieldset>
+          <legend>Sök på filmer eller SL</legend>
+          <select id="select">
+            <option>Movies</option>
+            <option>Sl</option>
+          </select>
+          <input type="text" id="input" placeholder="search Movies" />
+          <button id="btn">Sök</button>
+        </fieldset>
+      </form>
+    </div>
+    <div id="moviesContainer"></div>
+    <div id="slContainer"></div>
+    <script type="module" src="/src/ts/main.ts"></script>
+  </body>
+</html>
