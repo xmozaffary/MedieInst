@@ -18,6 +18,12 @@ export const createHtmlBuses = (sl: IResponseData) => {
     busDisplayTime.innerHTML = sl.Buses[i].DisplayTime;
     busStop.innerHTML = sl.Buses[i].StopPointDesignation;
 
+    busContainer.className = "vehicleContainer";
+    slContainer.className = "vehicleContainer__slContainer";
+    busDestination.className = "vehicleContainer__busDestination";
+    busDisplayTime.className = "vehicleContainer__busDisplayTime";
+    busStop.className = "vehicleContainer__busStop";
+
     slContainer.appendChild(busContainer);
     busContainer.appendChild(busLineNumber);
     busContainer.appendChild(busDestination);
