@@ -1,0 +1,15 @@
+git med team:
+        för att börja med projectet
+        1.En person skapar repo
+        2.bjud in övriga i teamet => repo -> setting -> coolaberaters
+        3.klicka i länken på har alla tillgång till repo
+        4.för att få projectet ska man skriva commandot "git clone url"
+
+            Branches
+                -är en kopia av kode.
+                -mna skapar en nranch och nämnar det till feature- ex: footer
+            för att merga
+                -växla till distinations branchen
+                -git pull
+                -git merge <source>
+                -git push

@@ -1,0 +1,86 @@
+typeScript
+    vad är typeScript?
+        en superset som man kan komplierar til JS
+        lättare att hålla struktur i js
+        nackdel: man ska installera och kompliera
+
+    installera typeScript globalt
+        npm i -g typescript
+        -g står för globalt och man kan ställa sig var somhelst
+        vad betyder att man har installerat ts, det betyder att man har en file som heter tsc som komplierar ts till js
+        
+    Datatyper
+        string
+        number
+        boolean
+        date
+        om man har en string variable så kan man inte ändra till number.
+        man kan berätta till variable vilka datatype den har. Man behöver helatiden definera sina variable
+        komplexa Datatyper måste anges som tex classer eller listor
+        const age = 44;
+        const numbers:number[] = [23, 12 , 3 , 34];
+
+    klasser
+    	class Person {
+            name : string,
+            age: number,
+            isMarrige: boolean,
+
+            constructur(name:string, age: number, isMarrige: boolean){
+                this.name = name;
+                this.age = age;
+                this.isMarrige = isMarrige;
+            }}
+
+        det som man skriv däruppe var inte helt rätt man kan göra så istället
+
+        class Person{
+            constructur(
+            public name:string,
+            public age:number,
+            public isMarrige:boolean
+            ){}
+        }
+
+        const p:Person = new Person("ali", 44, true); // Person är dataTypen som man har deinerat övanpå
+        p.name
+
+        class toDo {
+        isDone:boolean; // man skriver varablen här för att man vill ange värde till den från början
+        constructur(public text:string){ // de har inget värde från början
+        this.isDone:false; // här tilldelar man en värde till den
+            }
+        }
+
+    Funktioner
+        function sum (x:number, y:number){ // när mann skickar en parameter till en funktion så måste man alltid berätta variablens datatype
+            const theResult:number = x + y;
+        return theResult; // man ska också berätta vilka datatyp man returnerar ex: function sum(x:number, y: number) :number 
+        // :number är den datatypee som man har sagt att den ska resturnera
+        }
+        // man ska berätta vilka datatype denna funktion ska returnera
+        genom att skriva function():datatype
+
+        för att anropa funktionen
+        const s = sum(10 , 20) // funnctionen anropas och värden som returneras tilldelas till variablen s
+
+
+    DOM   
+        document.getElementById("pTag"); // documnet är en object som heter Document
+        getElementById("pTag") // har en datatyp som heter HtmlElement.
+            HtmlElement är en generelt datatyp som gäller alla html tagar.
+            men man skappar en div så har det datatyp HtmlDivElement
+            på generelt HtmlElement finns inget value så man måste berätta vilka HtmlElement är det.
+
+        const userImput = document.getElementById("theImput") as HtmlInputElement; // nu har det en value för att vi har sagt att den är en input
+            om man skriver userImput.value kommer det fungera.
+        om getElementById inte hittar något så får man error så man skriver en if satts för att kontollera att den finns 
+        if(document.getElementById("theImput")){
+            //
+            userImput?.value
+            getElementById retrunerar en antingen null eller undifined och om man skriver ? resturnnerar det undifiend istället null så att koden inte krashar.
+        }
+        
+        VAD HÄNDER OM MAN SKAPPAR EN ELEMENT?
+            const save = document.createElement("button"); // här kommer den leverera HtmlButtonElement direkt så man behöver inte skriva if sats
+

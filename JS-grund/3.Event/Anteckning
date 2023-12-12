@@ -1,0 +1,82 @@
+3.Event
+    Repatition:
+        DOM - document Objeect model = vad vi ser i webbläsaren.
+            i js kommer vi åt DOM --> genom att skriva document och sen antingen kan man skappa eller hitta sen så kan man ändra
+            hitta:
+                document.getEelemeentById("container");
+                    Söker efter ett html-element som har id container 
+                    getElementById() är en funktion. och har en return
+                document.createEelement("tag namn");
+                    skapar i detta fall en tag - om man skriver div så skappar den div tag
+                const myTag = document.getEelemeentById("något ID");
+                nu finns resultatet av sökning i myTag variable
+        Mer om DOM:
+            Det finns fler sätt att hitta eleement:
+                document.getElementById(); // hitta med id
+                document.getElementByClass(); // hitta alla element className som man skriver i paranes. MAN KAN HITTA FLERA ELEMNT
+                document.querySelector(".red>span"/ someId); // man kan hitta eller få en element med class name eller namn på taget osv...
+            <input id="fName"/>
+                Specialla att hanteera i js
+                const myInput = document.getElementById("fName");
+                innreHtml inte fungerar på input
+                man kan använda value
+                myInput.value("lorem");
+                    detta kommer att sätta texten i textruttan till lorem
+                const textInput = myInput.value;
+                    lagrar texten/value som user anger i textruttan i valiable textInput
+            
+    Händelser:
+        clicka
+        Scroll
+        hover
+        rörelse av markör
+
+        onload
+            vi vill få kontroll på händelser med hjälp av funktion.
+
+        <button onClick="Här skriver det funtionen som ska hända/köras">Spara</button> detta gör vi html file
+            man registerar händelser med on dom beetyder vid
+            nu ska glömma detta sättet och istället kommer vi skriva js, varför?
+                ofta vet vi inte vilka html tagar ska vi ha,därför skappar vi knapparna i js
+                Hur gör man det?
+                    const SaveButton = documeent.createEleemeent("button");
+                    saveButton.className("btn");
+                    saveButton.id = "save";
+                    saveButton.innerHtml = "spara";
+
+                    saveButton.addEventListener("click", namn på funtion utan paranes--> för att om man skriver funktion med parantees så körs funktion. alltså vi bara säger så heter funktionen); 
+                        man ger 2 st argument
+                        andra argument ska vara en funtion
+                            alltså amn anropar funktion i en annan funktion
+                    
+                        addEventListener - en funktion som kopplar ihop en händelse med våra funktioner.
+                            syntax:
+                            addEventListener(event: string, callback: fn). void; // viod betyeder att den ger inget till oss
+
+                            exempel:
+                                saveButton.addEventlistener("mouseenter", paintItBlue);
+                                saveButton.addEventlistener("mouseleave", removeBlue);
+                                gå genom alla händeelser och kolla vad de gör
+
+                                vad är variable e i event?
+                                    e är själva hämdeelsen.
+                                        e.target => saveButton. sättet att komma åt saveButton
+                                        om e.target är vår kapp så ska jag kunna ändra den
+                                            e.target =
+                                            saveButton =
+                                            <button>Spara</button>
+
+                        
+                            saveButton.addEventListener("click",hand );
+
+                            const hand =(e) => {
+                                _____
+                            }
+
+                            man kan skriva istället 
+                            saveButton.addEventListener("click", (e) =>{
+                                (e) =>{ } --> dette heter anonym function
+                                nu kan man inte återanvända nån annan ställe.
+                            })
+    Vite:
+        

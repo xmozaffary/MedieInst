@@ -1,0 +1,18 @@
+vad är promise?
+    -Promise i js används för att hantera asynkrona operationer.
+    -Den repesenterar ett värde som kanske inte är lklar ännu, meen kommer att bli det i fromtiden
+    -Promise har 3 tillstånd/status
+        Pending(väntande): initialt tillstånd när en promise skappas // detta betyder att denn inte är klar än
+        Fullfiled(uppfyllda): promisen har slutförts och resultatet är tillgängligt
+        Rejected(avvisad): ell fel inträffades under utförande av promise
+    -Skapa Promise
+        för att skappa promise så måste man skria new promise() och sedan skriver man två funktioner och skickar som parameter
+    .then // hanterar reesultatet när en promise är uppfylda.
+
+    -använda promise med fetch()
+    function get (url) {
+        fetch(url).
+            .then((resp) => {resp.json()})
+            .then((data) => return data)
+            return data // functionen skickar tillbaka resultatet av api anrop och konverterar den till json
+        }

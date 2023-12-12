@@ -1,0 +1,57 @@
+Repetition
+    vite-plugin-checker
+    Lsitor
+
+    const p = new Person("ali")
+    const persons:Person[] = [{name:"sabbe"}, new Person("hanna"), p];
+
+class Car{
+    mileage:number // om man vill inte ange en värde i början så måste man definera sin variable i class också
+    consturctur(public color:string,
+                public model:string
+                public brand:string){
+        this.mileage = 0 eller false;
+                }
+
+    drive(distanse:number) { // function inuti en class och för att anropa funktionen inuti class kan man skriva c.drive()
+        this.mileage += 2000; // this betyder objectet c när man skriver c.drive
+        // man kan skicka också skicka data som vanlig i parameter
+        // om man vill ta emot en parameter så är det som vanlig
+        this.mileage += distanse;
+    }
+}
+
+c.drive(100)
+const c:Car = new Car("blue", "s", Tesla);
+
+Interface
+    beskrivning av ett object typ samma sak om ett class men en annan sätt och varför flesa sätt?
+        // det fungerar som ett filter
+    
+    skriva Interface
+        // man skriver stört i
+    Interface IPerson{
+        name:stirng;
+        age:number;
+    }
+        // Interface sakanar consturctur och det betyder att den kan inte skppa object
+
+    översätta bilden till koden.
+        Interface IProduct {
+            name:sting;
+            year:sting;
+            price:number
+        } // man får hela objectet men med hjälp av Interface filterer man så att man får bara de egenskaper som man har skrivit i Interface
+
+        conat r = await axios.get<IPerson[]>() // när man anger datatype på anrop heter det Generice
+        r.data.forEach((product)) => { //product har samma datatype som IProduct
+            product.name
+            product.year
+            product.price
+        }
+        viktig att fötsåt att man får hela objectet
+
+    type i ts
+            INTE roligt
+        det är samma sak som Interface inget stört skillland, man kan välja vilka som helst.
+        

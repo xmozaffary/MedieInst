@@ -1,0 +1,67 @@
+Loopar
+    for loop;
+        Det spelar inget roll vad finns i våra list man kan loopa den.
+            alla listor han en length.
+            funktioner för att förändra Loopar
+            /*
+            .push() // lägger till en eller flera element i slutet en array
+            .pop() // tar bort det sista elementet från en array
+            .splice()
+            */
+        ex: for(let i = 0; i < array.length ; i++){}
+            ha info och gör det till lista
+            loopa lista 
+            skapa html
+    for each;
+        array.forEach((value) => {})
+        ex:
+            const animals = ["ko", "looo", "katt", "hund"];
+            hitta ul
+            animals.forEach((value) => {
+                const li = dokument.createElement("li");
+                li.innreHtml = "value";
+                ul.appendChild(li);
+            })
+
+            den går alltid från position 0 till slutet av lista och man
+            kan inte ändra på den.
+
+            i for loop vet man hur många  gånger ska man loopa en sak.
+            används när vi vet antalet iteationer
+
+    while loop
+        man ska ha vilkor
+        let 0;
+        while(i < 10){
+            // man ska ändra värdet i på nån sätt här i loopet så att den blir false
+            // så att loppen avbryts
+        }
+
+        const theNumber = 4711;
+        let theGuess = 0;
+        while(theGuess !== theNumber){
+
+        }
+
+    loop map()
+        översätta ett värde till en annat värde
+        syftet loopa genom en lista och omvandla 
+        sytax:
+            array.map( (parameter ska vara en värde) => {}) : array,
+            ex:
+                const numbers [1, 2, 3, 4, 5];
+                const doubles = numbers.map((value) =>{
+                    return value * 2;
+                })
+
+                const doubles = numbers.map((value) => value * 2);
+
+Några andra funktioner:
+    array.filter();
+    array.sort();
+    array.reduse();
+
+
+
+Demo:
+    

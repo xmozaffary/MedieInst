@@ -1,0 +1,110 @@
+repetition
+    fetch(url string) taremot en string => pekar mot ett api
+    ett api är ett svar låda som kör kode
+    när man skickar en ftech man får tillbaka promises av datatypen <response>
+
+    alla anrop kan ha 4 olika mathoder: get, post. delete och en till 
+    när man skickar en anrop så får man en promis och det tar tid då (then) man fick data ska man köra koden.
+    ftech(url).then((en funktion om det går bra)=>{} , (en funktion om det går dåligt)=> {})
+    fetch(url).then((response)=> {
+        // vi vill säga response.json
+        return response.json(); detta är också en löfte och hur hanterar man en löfte. med then
+        }).then((data)=> {
+            // beroende på vilka url/api man har så får man olika data
+        }) // allt detta kan man förenkla genom att tar bort vissa mosviklar som tex: 
+
+        fetch(ulr).then((response)=> response.json())
+            .then((data)=> {
+                createHTML(data);
+        })
+
+.env
+    vite.my-secret-apikey = abc123
+    för att komma pt det. import.meta.env.vite-my-secret-apikey
+    man skapar .env själv och man lägger den alltid i rooten.
+    när man utvecklar så skriver man .env.development 
+
+
+async/await
+    -är ett annan sätt att anropa en api
+    -istället att skriva then så skriver vi vänta/await och den man skriver fromför fetch(). ex: await fetch()
+    -man skriver den som en funktion const response = awiat ftech()
+    -sen skriver man: const await data = await response.json()
+    -detta gör samma ska som man skriver fetch().then
+
+    fel hantering :
+    -try{
+        resolve
+    }catch(error){
+        reject
+    }
+    -man väljer om man vill göra dett eller inte. om man inte gör det och det blir fel så koden stannar och man får eroor i consolen.
+
+    -buuton.addEventListner("click" async => { // vi måste brätta till js att den behöver vänta så att den inte krashar. man kan skriva async för att berätta 
+        // att js behöver vänta (ansyncront)
+        const r = await fetch(url):
+        const data = await r.json();
+    })
+
+
+    axios
+        -det finns flera sätt att få löfte och axios är ett sätt som man kan använda istället fetch
+            antingen fetch eller axios så får man promises sen kan man använda then eller await för att hantera den.
+        - för att använda axios så måsta man installera den.
+            installationen => npm i axios
+            den som man installerar kommer att lägga sig node-modules
+
+        - när man skriver npm i så installeras allt som behöves installeras (allt som behövers installeras står package.json)
+        när man installerat axios behöver man anvönda den
+            import axios from axios; // detta kommer att skrivas av vsCode när första gång man skriver axios i koden
+
+            att använda axios
+                axios.get("url") // nu vill jag göra ett get request
+                        det ger oss promises<axioaresponse> sen kan man skriva then funktion
+                .then((response) => { // här response är inte längre datatypen response, det är datatypen response axios
+                response.data
+                vi får datan direkt för att get gör json delen.
+
+                })  
+                om vill gör axios med async await istället then
+
+                const response = await axios.get(url);
+                response.data
+
+    -tjänster
+        vi har main.js men vi vill dela detta fil. så att vi har olika filer med olika sytfer, som tex: tjänster, models(class) och kanske en annan fil som skappar HTML
+        tjänster, models och skapa html är mappar.
+        create, read, update och delete kallas för CRUD (första bosktaver)
+            *i tjänster mapp kan vara movie.service.js
+                                        searchMovies
+                                        getMoviesId
+                                    serviceBase.js
+                                        get // man skapar en anrop funktione och sen kan man använda den funtionen i andra filer ocu då man skriver anropa 
+                                            api funtionen en gång som en funktion och sen anropar man när man vill. och om man ändra anrop api methoden aå behöver man 
+                                            bara andra den en gång
+
+            * presention => application => data
+
+    -main.js
+    docoment.getElementById("...")"click", async () => {
+        const movies = await searchMovies(// skickar parameter// input.value)
+        createHtml(); // om man vill
+
+    }
+
+    -movieService.js
+        // skriver funktion här inne för att söka filmer
+        const searchMovies = async (title) => {
+            const data = await get("....");
+        
+        retrun data.Search;
+        }
+    -serviceBase.js
+    // göra fetch
+     const get = async (url) {
+       consr r = await fetch(url); // för att komma åt den så man behöver bara anropa funktionen
+       await data = await r.json();
+       return data; 
+     }
+
+    alla funktioner som är markerad som async kommer att få en datatype som löfte

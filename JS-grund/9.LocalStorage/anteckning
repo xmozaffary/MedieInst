@@ -1,0 +1,39 @@
+Repatition
+    -vi vill ha vår class i en annan file.
+    -man skriver ordet på nytt för att VScode ska importera.
+    -constructor anroppas bara när vi skappar new object
+    -this är objektet som man skappar, ex: const p = new Person("Sabbe", 44);
+Local storage
+    - man kans Spara vilka date som helst i webläsaren
+        *listor
+        *objket osv
+    -varför?
+        *För att kunna använda den igen
+    -När
+        *för alltid?! kanske
+    -localStorage är beständig // alltså den är kvar där även om man stänger weebläsaren
+
+    -Hur?
+        -localStorage.setItem();
+        setItem(key : "strin", value: "String"):void // key är parameter namnet i localStorage / variablenamn och value är det som vi sparar
+    ex:
+        let p = new Person(name : "sabbe", age: 44):
+        localStorage.setItem("me", p); //det blir fel [object object] för att man försöker spara objec i localStorage men man kan bara sparastring i
+        localStorage eller men vi vill ha text/innehållet, man kan lösa det på detta sättet:
+        let p = new Person():
+        localStorage.setItem("me", Json.stringify(p)); // objectet omvandlas till string/ json-string.
+        nu får man: "{namn : "sabbe", age : 44}" \* 
+    
+    localStorage.getItem();
+    ex:
+        getItem(key: "string") // mmär man skriver getItems så man anger key för att funktinen ska hämta den och man skriver parameter kry som string.
+        const pish = localStorage.getItem("me"); // man får ett text och då behäver man omvandla till object
+        let p = Json.parse(pish) omvandlar text till object
+
+        när man laddar hemsidan ska localStorage hämtas.
+        Glöm inte att när man spara något i localStorage omvandla den till text för man kan bara spara
+        text i localStorage, om det är object och när man hämtar något från localStorage så är det alltid text så ska man omvandla den
+        till object om det är object
+
+    Session Storage
+    -är exkat samma sak som local storage men när man stänger webbläsaren så försvinner det.

@@ -1,0 +1,37 @@
+Formulär
+    <form>
+        <input/>
+        <input/>
+        <button>Spara</button> // by defualt kommer att button vara submit
+    </form>
+    http web request av type post.
+        vi vill bestämma vart ska hämna data
+        för att komma åt formulär.
+        vi måste första att from är en HTML element
+            const theForm = dodument.qyerySelector("from");
+            theForm.addEventListner("submit", save);
+            const save = (e) => {
+                e.perventDefault(); // viktig
+            }
+
+    const firstName = document.getElementById("id name");
+    firstName.addEventListner("blur") // eller fukos, change, keypressed
+
+
+Listor:
+    lista = array om man säger lista så betyder det array ( vad är det fybanachi)
+    1, 2, 3, 4, 5, ....
+    hur skriver  man en lista? med varable
+        const numbers = [1, ,1 2, 3, 4, 5, 8, 13]; // allt genom hakparantes räknas som ett värde
+            och strukturen kallas för json och det splar ingen roll vilka värde har den i sig.
+        numbers.length
+        numbers[3] index = i
+        lägga till med hjälp av en funktion
+            numbers.push(21);
+            man ska ha samma datatyp i en array.
+        Ta bort bara sista
+            numbers.pop(ingen argoment)
+            numbers.splice(1 = index, 1 antal värde som ska tas bort)
+        Ändra värden
+            numbers[3] = 9;
+            
