@@ -1,0 +1,146 @@
+repetition
+    variabler
+    operationer
+    dividera alldrig med 0
+    modolus
+    för att veta om ett tal ett jämt tal eller ojämt tal så kan man göra talet modolu 2
+    text hantering
+    let i = "lorem"
+    s = + "ipsom" eller s+= "ipsom"
+    man kan bara plus texter och inte -, /, *
+    && - || -- null och undifine tolkas alltid som false
+    localSroreg.getItem("...") || ("[]")
+    Listor
+    const numbers = [1, 2, 3, 4, 5, 6, 7]
+    console.lof(numbers)
+    numbers.splice(1 position, 3 hur många) // hur många ska tar bord och i vilka positions ska tas borst
+    numbers.pop() // 
+    numbers.push(21 denna pushas i listan) // pushar i listan
+    numbers.length()
+    flera functioner som man kan använda i listor
+        .map
+        .sort
+        .filter
+    hitta världen
+        numbers.indexOf() detta ger oss -1  så man kan säga om resultatet av detta är minus ett det betyder att det inte finns
+        om det finns så resultatet av är indexet på det som man leter efter
+        for(){ // detta är en loop
+            if(numbers[i] === 9){ // man ska alltid har 3 st lika med tecken för best praktis
+                found = true
+                break /7 avbryter loopen
+            }else{
+
+            }
+        }
+
+    loppar
+        for 
+        foreach
+        while // när man inte vet på förhand hur många gåmger ska man loppa så kan man använda el while loop
+
+    objekt
+        olika sätt att skappa object
+        ett sätt :
+            const P = {
+                name: "Ali"
+                age: 23
+            } Json
+        andar sätt => class
+        const Person { // alla classer har nen constructur även om man ainte skriver den
+            name:
+            age:
+            constructur(name, age){
+                this.name = name;
+                this.age = age;
+            }
+        }
+
+        skapa en ny person
+            const p = new person("ali", 23) 
+
+    funktioner
+            ett sätt att skapa en funktion
+                function doSomething (name) {}
+            andra sätt att skapa en funktion
+                const funktionName = (name) => {} 
+            // när man anropar en funtion så måste man skicka värden
+            // till slut kan man säga return om man vill resturnera  ett värde
+            // när man returnera något så måste man kunna använda den och man gör det genom att sätta värden i en variable
+            ex => const värde = funktioneName; // nu finns det värdet i en variable
+
+            Alla datastrukturer (object, listor och funktioner)
+    DOM:en
+        hitta en element med:
+            .getElementById() eller 
+            .querySelector eller 
+            .getElementsByClassName // detta kommer man få en lista med elementer som har alla klasser som man skriver genom parantes
+        skapa saker
+            .creataElement("tagName")
+        Ändra saker
+            const img = Hitta eller skapa element
+            img.id= "..."; ändra id
+            img.className = "...";
+            img.src
+            img.alt
+                man kan använda setAttribute för att sätta i en imgTag src eller alt
+        Händelser
+            addEventLister("clicka" => {ändra listan}) // man kan anävnda addEvent på vilka html element som helst
+
+    fetch/axios
+        båda är asyncrona funtioner det betyder att det tar lite att hämta så vi måste vänta
+            ett sätt att hämta api
+                fetch(url) detta kommer ger oss tillbaka en promise objekt sen ska man hantera promise
+                .then(resp) => resp.(json)
+                .then((data) => {
+                    log(data)
+                    }).catch // för att visa error
+            andra sätt
+            try{
+                const resp = await fetch(url) // response är det som server ger oss som är 200 det betyer att det gick bra.
+                const data = await resp.json()
+            }.ctach{
+                error kanske
+            }
+            axios
+                axios.get(url)
+                .then((resp)=> {}) // resp här är är inte samma sak som de andra resp i fetch funktionen
+            
+            const r = await axios.get(url);
+            r.data
+
+    typeScript
+        dataType
+            let age:number = 23;
+            age = "age" // detta går inte för att i början har man sagt att det är number datatype så man kan bara ange number till detta variable
+            const dosmt = (name, string):string => {}
+            cosnt = dosmt("age");
+        objekt
+            const Person{
+                constructur(public name:string, public age:number){}
+            }
+
+            const p = new Person("sabe", 23)
+
+        interface Imovie{
+            title:string
+            Poster:string
+            omdbId:string
+        }
+
+        const movies:Imovie{
+            title : "bla bla"
+            Poster: "utl"
+            imdbId:"string
+        }
+
+        vad får jag från Omdb
+            interface IOmdbResp {
+                Search: Imovie[],
+                totlresp:trring
+            }
+
+            interface Imovie{
+                title:string
+                Poster:string
+                omdbId:string
+        }
